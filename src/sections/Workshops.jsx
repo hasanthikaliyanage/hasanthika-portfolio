@@ -17,7 +17,7 @@ const workshops = [
   {
     title: "API & GenAI Tour 2025",
     year: "2025",
-    image: "/projects/genai-tour.jpg",
+    image: "/projects/genai.jpg",
   },
   {
     title: "Beauty of Cloud 2.0 – Getting into the Cloud with AWS",
