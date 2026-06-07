@@ -7,6 +7,7 @@ const footerLinks = [
   { href: "#certifications", label: "Certifications" },
   { href: "#workshops", label: "Workshops" },
   { href: "#contact", label: "Contact" },
+  
 ];
 
 export const Footer = () => {
@@ -21,33 +22,31 @@ export const Footer = () => {
 
   return (
     <>
-      <footer className="py-12 border-t border-border">
+      <footer className="py-10 border-t border-border">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            
-            {/* Copyright */}
-            <div className="text-center md:text-left">
-              <h3 className="text-lg font-semibold">
-                Hasanthika Liyanage
-              </h3>
+          
+          {/* Links Center */}
+          <nav className="flex flex-wrap justify-center gap-6 mb-6">
+            {footerLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
 
-              <p className="text-sm text-muted-foreground mt-2">
-                © {currentYear} Hasanthika Liyanage. All rights reserved.
-              </p>
-            </div>
+          {/* Copyright Center */}
+          <div className="text-center">
+            <h3 className="text-lg font-semibold">
+              Hasanthika Liyanage
+            </h3>
 
-            {/* Footer Links */}
-            <nav className="flex flex-wrap justify-center gap-6">
-              {footerLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
+            <p className="text-sm text-muted-foreground mt-2">
+              © {currentYear} Hasanthika Liyanage. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
@@ -57,26 +56,18 @@ export const Footer = () => {
         onClick={scrollToTop}
         aria-label="Scroll to top"
         className="
-          fixed
-          bottom-6
-          right-6
-          z-50
-          w-14
-          h-14
+          fixed bottom-5 right-5 z-50
+          w-12 h-12
           rounded-full
           bg-primary
           text-white
           shadow-lg
           hover:scale-110
-          hover:shadow-xl
-          transition-all
-          duration-300
-          flex
-          items-center
-          justify-center
+          transition-all duration-300
+          flex items-center justify-center
         "
       >
-        <ArrowUp size={22} />
+        <ArrowUp size={20} />
       </button>
     </>
   );

@@ -13,6 +13,16 @@ const projects = [
   },
 
   {
+  title: "Personal Portfolio Website",
+  description:
+    "A modern and responsive personal portfolio website built to showcase my projects, technical skills, education, certifications, and professional experience. Designed with a clean user interface and smooth user experience.",
+  image: "/projects/portfolio.jpg",
+  tags: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+  link: "https://hasanthika-portfolio.vercel.app/",
+  github: "https://github.com/hasanthikaliyanage/hasanthika-portfolio",
+},
+
+  {
     title: "Open Mind – Mental Wellness Platform",
     description:
       "A mental wellness platform featuring mood tracking, therapy session booking, podcasts, yoga programs, and an administrative dashboard.",
