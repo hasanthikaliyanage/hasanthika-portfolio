@@ -22,6 +22,15 @@ const projects = [
   github: "https://github.com/hasanthikaliyanage/hasanthika-portfolio",
 },
 
+{
+    title: "Puzzle Hands AI – Computer Vision Puzzle Game",
+description:
+  "Built an AI-based interactive puzzle game using MediaPipe hand tracking. Users control gameplay using real-time hand gestures captured via webcam, featuring dynamic puzzle generation, timer system, and leaderboard functionality.",
+image: "/projects/puzzle-hands-ai.jpg",
+tags: ["AI", "Computer Vision", "Next.js", "TypeScript", "MediaPipe"],
+link: "https://puzzle-hands-ai.vercel.app/",
+github: "https://github.com/hasanthikaliyanage/puzzle-hands-ai",
+  },
   {
     title: "Open Mind – Mental Wellness Platform",
     description:
